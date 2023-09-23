@@ -1,6 +1,6 @@
 ---
-title: "About"
-permalink: "/about/"
+title: "Lesson1"
+permalink: "/Lesson1/"
 layout: page
 ---
 Our primary tool for writing programs in C++ will be the use of the Visual Studio 2022 software.
