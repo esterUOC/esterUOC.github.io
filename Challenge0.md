@@ -9,3 +9,4 @@ layout: page
 - [Lesson 2](Challenge0/Lesson2.md)
 - [Lesson 3](Challenge0/Lesson3.md)
 - [Lesson 4](Challenge0/Lesson4.md)
+- [Lesson 5](Challenge0/Lesson5.md)
