@@ -20,3 +20,6 @@ graphic designers, compilers, code completion tools, source code control, extens
 more features in one place.”
 
 ## Download and installation of the VS 2022
+
+We will go to the [link](page:https://visualstudio.microsoft.com/es/vs/), and click the download button
+![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/f35d1044-1089-41ef-ae4a-99195b430be1)
