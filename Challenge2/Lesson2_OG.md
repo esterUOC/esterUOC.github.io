@@ -3,13 +3,12 @@ title: "Lesson2_OG"
 permalink: "/Lesson2_OG/"
 layout: page
 ---
+## 2. First window
 
-## 2. Primera finestra
+In this lesson we will explain step by step how to create our first window using OpenGL.
 
-En aquesta lliçó explicarem pas a pas com crear la nostra primera finestra utilitzant OpenGL. 
-
-## 2.1	Ús de la biblioteca GLFW
-Anem a inicialitzar una finestra de GLFW. Dins del main anem a escriure:
+## 2.1 Using the GLFW library
+Let's initialize a GLFW window. Inside main we are going to write:
 ```
 int main()
 {
@@ -22,13 +21,13 @@ int main()
 }
 ```
 
-glfwInit inicialitza GLFW, i seguidament podem inicialitzar una finestra utilitzant la comanda glfwWindowHint. Aquesta funció es caracteritza perquè com a primer argument indiquem quina opció volem inicialitzar, i com a segon argument indiquem el valor. A la documentació de GLFW podreu trobar totes les possibles opcions configurables.
+glfwInit initializes GLFW, and then we can initialize a window using the glfwWindowHint command. This function is characterized by the fact that as the first argument we indicate which option we want to initialize, and as the second argument we indicate the value. You can find all the possible configurable options in the GLFW documentation.
 
-En el nostre cas indiquem que volem volem usar la versió d’OpenGL 3.3, i el mode core, tal com hem explicat en la lliçó 0.
+In our case we indicate that we want to use OpenGL version 3.3, and the core mode, as we explained in lesson 0.
 
-A continuació afegirem el següent codi per a crear la finestra:
+Next we will add the following code to create the window:
 ```
-	// Creació de la finestra
+	// Creating the window
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
 	{
@@ -38,39 +37,38 @@ A continuació afegirem el següent codi per a crear la finestra:
 	}
 	glfwMakeContextCurrent(window);
 ```
+The function glfwCreateWindow, to create the window, needs the following parameters, the width, the length, the name we give to the window, the two following parameters can be ignored.
+If the window object is created successfully, then we create the context for our window with flfwMakeContextCurrent.
 
-La funció glfwCreateWindow, per crear la finestra, necessita els següents parameters, l’amplada, la llargada, el nom que li donem a la finestra, els dos següents paràmeters els podem ignorar.
-Si l’objecte window es crea de forma satisfactoria, llavors crearem el context per a la nostra finestra amb flfwMakeContextCurrent.
 
-
-## 2.2	Ús de la biblioteca GLAD
-Just després del codi de GLFW afegirem el codi que inicialitza GLAD, recordeu que és necessari executar aquest codi abans de cridar cap funció d’OpenGL.
+## 2.2 GLAD Library Usage
+Right after the GLFW code we will add the code that initializes GLAD, remember that it is necessary to run this code before calling any OpenGL functions.
 ```
-	// Inicialització de GLAD
+	// Initialize GLAD
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
 		std::cout << "Failed to initialize GLAD" << std::endl;
 		return -1;
 	}
 ```
-	Aquest tros de codi el que fa és: glfwGetProcAddress  és una funció que retorna l'adreça de la funció principal o extensió d'OpenGL especificada, si és compatible amb el context actual. I aquesta adreça la passem a GLAD que carregarà els punters de les funcions d’OpenGL específica del sistema operatiu en el que s’està executant el codi.
+	What this piece of code does is: glfwGetProcAddress is a function that returns the address of the specified OpenGL main function or extension, if supported by the current context. And we pass this address to GLAD which will load the OpenGL function pointers specific to the operating system the code is running on.
 
-La compilació ha de ser correcte i l’execució del codi ha de funcionar també tot i que no es pot veure res.
+Compilation should be correct and code execution should work as well even though nothing can be seen.
 
 
-## 2.3	Definició del viewport
-Per poder renderitzar alguna cosa, necessitem dir-li a OpenGL el tamany de la finestra on volem renderitzar els nostres poligons i malles, aixó o farem amb la funció glViewport.
+## 2.3 Definition of the viewport
+In order to be able to render something, we need to tell OpenGL the size of the window where we want to render our polygons and meshes, or we'll do that with the glViewport function.
 
-Els dos primers paràmeters defineixen el punt baix a l’esquerra de la finestra, el tercer paràmetre defineix l’ample i finalment el quart defineix l’alçada. En aquest cas els valors coincideixen amb la finestra definida anteriorment amb GLFW, tot i que poden tenir diferent tamany.
+The first two parameters define the bottom point on the left of the window, the third parameter defines the width and finally the fourth defines the height. In this case the values ​​match the window previously defined with GLFW, although they may have different sizes.
 ```
 glViewport(0, 0, 800, 600);
 ```
-OpenGL utilitza les dades especificades mitjançant glViewport per transformar les coordenades 2D que va processar en coordenades a la pantalla. Per exemple, un punt d'ubicació processat (-0,5, 0,5) s'assignaria (com a transformació final) a (200.450) en coordenades de pantalla. Tingueu en compte que les coordenades processades a OpenGL estan entre -1 i 1, de manera que mapem efectivament des de l'interval (-1 a 1) fins a (0, 800) i (0, 600).
+OpenGL uses the data specified via glViewport to transform the 2D coordinates it rendered into on-screen coordinates. For example, a processed location point (-0.5, 0.5) will be mapped (as a final transform) to (200,450) in screen coordinates. Note that coordinates rendered in OpenGL are between -1 and 1, so we effectively map from the range (-1 to 1) to (0, 800) and (0, 600).
 
-## 2.3.1	Resize de la finestra
+## 2.3.1 Resize from window
 
-Haurem d’afegir funcions callback que es cridaran quan l’usuari canvia la mida de la finestra o viewport. 
-Afegirem la definició i la declaració de la funció a sobre de la funció main:
+We will have to add callback functions that will be called when the user changes the size of the window or viewport.
+We'll add the function definition and declaration above the main function:
 ```
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -78,15 +76,15 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	glViewport(0, 0, width, height);
 }
 ```
-Ara registrarem aquest callback just després de la creació del viewport .
+Now we will register this callback right after the viewport is created.
 ```
- // callback de resize
+ 	// callback de resize
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 ```
 
-## 2.4	Definició del game loop
+## 2.4 Definition of the game loop
 
-Quasi ja ho tenim, ara afegirem el loop principal del joc, el qual s’anirà executant indefinidiament fins que no li diguem lo contrari:
+We almost have it, now we will add the main loop of the game, which will run indefinitely until we tell it otherwise:
 ```
 	// Game Loop
 	while (!glfwWindowShouldClose(window))
@@ -95,63 +93,55 @@ Quasi ja ho tenim, ara afegirem el loop principal del joc, el qual s’anirà ex
 		glfwPollEvents();
 	}
 ```
-Amb aquest loop el que conseguirem és seguir pintant imatges i manejant l’input de l’usuari fins que l’usuari explicitament tanca la finestra.
+With this loop what we achieve is to keep painting images and handling user input until the user explicitly closes the window.
 
-La funció glgwWindowShouldClose comprova  si GLFW ha estat instruit a tancar.
-La funció glfwPollEvents comprova si hi ha inputs, com l'entrada del teclat o el moviment del ratolí.
-El glfwSwapBuffers canviarà el color buffer que s'utilitza per renderitzar durant aquesta iteració de renderització i mostrar-la com a sortida a la pantalla.
+The glgwWindowShouldClose function checks if GLFW has been instructed to close.
+The glfwPollEvents function checks for input, such as keyboard input or mouse movement.
+The glfwSwapBuffers will swap the color buffer used to render during this rendering iteration and display it as output to the screen.
 
 
-2.5	Tancar recursos
+## 2.5 Close resources
 
-Quan sortim del game loop perquè volem tancar la finestra haurem de tancar i lliberar tots els recursos de manera adequada, per això afegirem el següent codi després del main loop:
-
-	// Lliberar recursos
+When we exit the game loop because we want to close the window, we will have to close and release all the resources in an appropriate way, so we will add the following code after the main loop:
+```
+	// Release resources
 	glfwTerminate();
+```
+At this point if we compile and run the code, a black window should appear with the name we indicated earlier.
 
-En aquest punt si compilem i executem el codi, ens hauria d’aparèixer una finestra negre amb el nom que li hem indicat anteriorment.
-
- 
-
-
-2.6	Manejant l’Input
-
-Utiitzarem la funció de GLFW glfwGetKey per manejar l’input, més concretament per saber si una tecla ha estat premuda o no.
-
-Visiteu aquesta pàgina per accedir a totes les funcions oferides per GLFW: https://www.glfw.org/docs/3.3/group__input.html
-
-Crearem una funció pròpia que controla si una tecla ha estat premuda o no, en el cas que si, farem una acció si escau. Afegim la declaració i definició d’aquesta funció fora del main.
+![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/063e09e0-18f7-4a19-90f1-8b6428dea83e)
 
 
+## 2.6 Handling the Input
+
+We will use the GLFW function glfwGetKey to handle the input, more specifically to know if a key has been pressed or not.
+
+Visit this page to access all the features offered by GLFW:[link](https://www.glfw.org/docs/3.3/group__input.html)
+
+We will create our own function that checks whether a key has been pressed or not, in the event that it has been pressed, we will perform an action as appropriate. We add the declaration and definition of this function outside the main.
+
+```
 void processInput(GLFWwindow* window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
 }
+```
+And we will proceed to call this function within the game loop, in this way, we will check in each frame if any key is pressed.
 
-I procedirem a cridar aquesta funció dins el game loop, d’aquesta manera, comprovarem en cada frame si hi ha alguna tecla premuda.
-
-Si compilem i executem podrem comprovar com podem tancar la finestra prement la tecla ESC
-
-
-2.7	Reset del contingut del viewport
-
-Localitzarem totes les comandes de rendering dins del game loop, just després del manejament de l’input.  
-Lo primer que s’ha de fer abans de pintar un nou frame, és natejar la finestra amb un color de la nostra conveniència, sinò ho fessim així el resultat del frame anterior podria interferir en la imatge nova que estem a punt de calcular.
-
-Utilitzarem la funció glClear per natejar el viewport. Especifiquem el color per netejar la pantalla amb glClearColor. Sempre que anomenem glClear i esborrem el buffer de color, tot el buffer de color s'omplirà amb el color indicat per glClearColor. Això donarà com a resultat un color verd fosc blavós.
-
-La funció glClearColor és una funció que configura l’estat d’OpenGL i glClear és una funció que utilitza l'estat definit, ja que fa servir l'estat actual per recuperar el color de netejar.
-
-Si compilem i executem hauriem d’aconseguir la següent pantalla
+If we compile and run we can check how we can close the window by pressing the ESC key
 
 
- 
+## 2.7 Reset viewport content
 
+We will locate all the rendering commands inside the game loop, right after handling the input.
+The first thing to do before painting a new frame is to clean the window with a color of your choice, otherwise the result of the previous frame could interfere with the new image we are about to calculate.
 
+We will use the glClear function to clear the viewport. We specify the color to clear the screen with glClearColor. Whenever we call glClear and clear the color buffer, the entire color buffer will be filled with the color specified by glClearColor. This will result in a bluish dark green color.
 
+The glClearColor function is a function that sets the state of OpenGL, and glClear is a function that uses the defined state, as it uses the current state to retrieve the clear color.
 
-
-
+If we compile and run we should get the following screen
+![2](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/b9659107-4747-431f-bcbb-654e77b34943)
 
 
