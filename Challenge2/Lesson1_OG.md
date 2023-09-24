@@ -90,6 +90,7 @@ El fitxer zip conté dues carpetes, afegirem la capeta anomenada include al nost
 
 Ja ho tenim tot fet, al fitxer Game.cpp afegim 
 
+```
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -97,7 +98,7 @@ int main()
 {
 	return 0;
 }
-
+```
 Recordar que primer sempre hem d’incloure l’include de glad, ja que aquest incloueix els fitxers headers d’OpenGL (per exemple GL/gl.h) que son utilitzats per altres llibreries com ara GLFW.
 Hauriem de compilar i comprovar que ho fa amb exit, que no apareix cap error, la execució d’aquest codi no produeix cap finestra ni res.
 En la següent lliçó, crearem la nostra primera finestra en OpenGL.
