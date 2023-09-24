@@ -3,95 +3,97 @@ title: "Lesson1_OG"
 permalink: "/Lesson1_OG/"
 layout: page
 ---
-## 1. Inicialització del projecte
 
-En aquesta lliçó explicarem pas a pas com crear la nostra primera finestra utilitzant OpenGL. 
+## 1. Initialization of the project
 
-##1.1	Creació del projecte buit amb Visual Studio 2022
+In this lesson we will explain step by step how to create our first window using OpenGL.
 
+## Creating the empty project with Visual Studio 2022
 
-Crearem aquesta finestra utilitzant l’IDE Visual Studio 2022. Lo primer que hem de fer és crear un nou projecte amb Visual Studio, escollirem el llenguatge C++ i la opció d’Empty Project
+We will create this window using the Visual Studio 2022 IDE. The first thing we have to do is create a new project with Visual Studio, we will choose the C++ language and the Empty Project option
 
- ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/ce08a59f-fb0f-4870-9148-19c320c7528b)
+![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/2a90cf2e-23f2-4b13-82cf-fc238b93b789)
 
-Poseu un nom adequat al projecte i guardeu-lo on vosaltres cregueu convenient.
+Give the project an appropriate name and save it where you see fit.
 
-Recordeu de configurar el projecte en Debug i 64bits
-![2](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/59216f99-d590-4590-8af6-a0d59dc31684)
+Remember to set the project to Debug and 64bits
 
-Afegirem un fitxer Game.cpp .
-
-Una vegada tenim el projecte creat, el primer que hem de fer abans de començar a crear gràfics impressionants és:
-
-1.	 crear un context OpenGL 
-2.	una finestra d'aplicació per dibuixar. 
-
-Aquest parell de punts són específiques del sistema operatiu en que treballem i a més a més OpenGL intenta abstraure's d'aquestes operacions. Això vol dir que hem de crear una finestra, definir un context i gestionar l'entrada de l'usuari per nosaltres mateixos.
-
-Afortunadament, hi ha força biblioteques que ofereixen la funcionalitat que busquem, algunes especialment dirigides a OpenGL. Aquestes biblioteques ens estalvien tot el treball específic del sistema operatiu i ens donen una finestra i un context OpenGL per renderitzar-nos. Algunes de les biblioteques més populars són GLUT, SDL, SFML i GLFW. 
-
-Noslatres farem servir GLFW. No dubteu a utilitzar qualsevol de les altres biblioteques, la configuració de la majoria és similar a la de GLFW.
-
-## 1.2	Baixar-nos i instalar GLFW: 
-
-GLFW és una llibreria específica per ser utilitzada en OpenGL, Bàsicament ens permetrà crear un context d’OpenGL, definir els paràmetres de la finestra i manipular els inputs de l’usuari.
-
-Primer de tot hem d’anar a la pàgina web: https://www.glfw.org/download.html, i baixar-nos els binaris en 64bits per a windows.
-![3](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/06f0b150-b986-45bc-8b46-e8eea2750742)
-
- 
-Anirem a la nostra carpeta de projecte i crearem 2 carpetes noves:
-
--	(opcional) 3rdParty : aqui guardarem els fitxers originals de les llibreries externes utilitzades
--	Dependencies: aquí guardarem els fixters necessaris per a la nostra aplicació
-
-Extraurem el contingut del fitxer glfw-3.3.8.bin.WIN64 a la carpeta 3rdParty i a la carpeta Dependencies crearem una carpeta nova anomenada GLFW, i a dins crearem dos carpetes una anomenada include i una lib:
-
- ![4](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/c11e4561-8fd4-4ea3-8c6b-bf0363ec7288)
-
-Copiarem el contingut de glfw-3.3.8.bin.WIN64\include a la carpeta Dependencies\GLFW\include de tal manera que quedi:
-
- ![5](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/6c21b288-e7b6-4796-b7d8-b520de00c5dd)
+![2](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/aba0210e-b485-47ee-a837-490d7c0e9455)
 
 
-Copiarem el contingut de glfw-3.3.8.bin.WIN64\lib-vc2022 a Dependencies\GLFW\lib de tal manera que quedi
-![6](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/1788706d-f271-46d3-b1d9-b5fe03f3f9b7)
+We will add a Game.cpp file.
+
+Once we have the project created, the first thing we need to do before we start creating stunning graphics is:
+
+ create an OpenGL context
+an application window for drawing.
+
+This couple of points are specific to the operating system we work on and, moreover, OpenGL tries to abstract itself from these operations. This means we have to create a window, define a context, and handle user input ourselves.
+
+Fortunately, there are quite a few libraries that provide the functionality we're looking for, some specifically targeting OpenGL. These libraries save us all the OS-specific work and give us a window and an OpenGL context to render. Some of the most popular libraries are GLUT, SDL, SFML, and GLFW.
+
+We will use GLFW. Feel free to use any of the other libraries, the setup for most is similar to GLFW.
+
+## 1.2 Download and install GLFW:
+
+GLFW is a specific library to be used in OpenGL, Basically it will allow us to create an OpenGL context, define the parameters of the window and manipulate the user's inputs.
+
+First of all we have to go to the website:https://www.glfw.org/download.html, and download the 64-bit binaries for windows.
+
+![3](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/5e29abf8-b981-4653-8061-c41e64117234)
+
+We will go to our project folder and create 2 new folders:
+
+(optional) 3rdParty: here we will save the original files of the external libraries used
+Dependencies: This is where we will store the files required for our application
+
+We will extract the contents of the glfw-3.3.8.bin.WIN64 file to the 3rdParty folder and in the Dependencies folder we will create a new folder called GLFW, and inside we will create two folders one called include and one lib:
+
+![4](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/4a73c064-9b60-41ee-a697-41988f74b831)
 
 
-## 1.3	Inicialitzar GLFW al nostre projecte: 
+We'll copy the contents of glfw-3.3.8.bin.WIN64\include into the Dependencies\GLFW\include folder so that it looks like this:
 
-Per poder utilitzar GLFW en el nostre projecte, hem d-incloure a la nostra solució els fitxer de la carpeta include i la lib.
-
-Obre la finestra de propietats del projecte, a partir del menu Project->Properties o alt+F7. Assegureu-vos de tenir seleccionat les opcions de Debug i x64
- ![7](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/e1ec8b61-5441-4be0-84ef-6873f3935a79)
-
-Per incloure els fitxers de la carpeta include, seleccionarem l’apartat C/C++ -> General, i a Additional Include Directories afegirem la linea $(SolutionDir)Dependencies\GLFW\include\ 
-
-![8](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/92d0b32f-0c72-464c-b5b1-68266e3f3dc4)
-
-Per incloure els fitxers de la carpeta lib, seleccionarem l’apartat Linker->General, i a l’apartat Additonal Library Directories afegirem la linea $(SolutionDir)Dependencies\GLFW\lib
- ![9](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/21b4311c-b1ca-4ff8-bb90-1ac57235b1f6)
+![5](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/7ed58fed-d0a0-4306-8983-7179f6643af9)
 
 
-També será necessari afegir a l’apartat Linker->Input, a l’apartat Additional Dependencies la llibreria glfw3.lib
+We will copy the contents of glfw-3.3.8.bin.WIN64\lib-vc2022 to Dependencies\GLFW\lib so that
 
- ![10](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/c1f1b5af-0121-4753-81f6-9d9895d54fd0)
-
-
-
--	baixar-nos i instalar GLAD:  Aneu a la pàgina: [link GLAD](https://glad.dav1d.de/)
-
-Seleccioneu el llenguate C++, en Specification escolliu OpenGL, en API escolliu la versió 3.3, en la secció Profile escolliu Core i finalment comproveu que Generate a loader está check. Cliqueu el botó Generate i baixeu-vos el .zip generat. 
-![11](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/d32fdedc-cfd6-4003-8e3e-1813da0a4a66)
+![6](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/55a5b9a0-b4ee-47af-b0a1-53b0a67f7830)
 
 
-El fitxer zip conté dues carpetes, afegirem la capeta anomenada include al nostre projecte, tal i com hem fet anteriorment i afegirem el fitxer glad.c al vostre projecte.
+## 1.3 Initialize GLFW in our project:
+
+In order to use GLFW in our project, we need to include the files in the include folder and the lib.
+
+Open the project properties window, from the Project->Properties menu or alt+F7. Make sure you have the Debug and x64 options selected
+![7](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/bdc1f696-80b8-44d7-ae7e-0ff75a2b6faa)
 
 
-Ja ho tenim tot fet, al fitxer Game.cpp afegim 
+To include the files in the include folder, select the C/C++ -> General section, and in Additional Include Directories add the line $(SolutionDir)Dependencies\GLFW\include\
 
+![8](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/96528bff-09b1-47e4-af6f-7db39fcbacb5)
+
+
+To include the files in the lib folder, select the Linker->General section, and in the Additonal Library Directories section add the line $(SolutionDir)Dependencies\GLFW\lib
+![9](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/1dc083cf-ac4d-4b00-8ff1-1397243ab314)
+
+It will also be necessary to add the glfw3.lib library to the Linker->Input section, to the Additional Dependencies section
+![10](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/92c4f66a-bff3-43d0-b4f3-9928a0942610)
+
+
+download it and install GLAD: Go to the page:[link](https://glad.dav1d.de/)
+
+Select the C++ language, in Specification choose OpenGL, in API choose version 3.3, in the Profile section choose Core and finally check that Generate a loader is checked. Click the Generate button and download the generated .zip.
+![11](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/5e3df07b-bc52-4ca5-a975-cf37ac05ba02)
+
+
+The zip file contains two folders, we will add the folder called include to our project as we did earlier and add the glad.c file to your project.
+
+
+We have everything done, in the Game.cpp file we add
 ```
-#include <glad/glad.h>
+#include <happy/happy.h>
 #include <GLFW/glfw3.h>
 
 int main()
@@ -99,6 +101,8 @@ int main()
 	return 0;
 }
 ```
-Recordar que primer sempre hem d’incloure l’include de glad, ja que aquest incloueix els fitxers headers d’OpenGL (per exemple GL/gl.h) que son utilitzats per altres llibreries com ara GLFW.
-Hauriem de compilar i comprovar que ho fa amb exit, que no apareix cap error, la execució d’aquest codi no produeix cap finestra ni res.
-En la següent lliçó, crearem la nostra primera finestra en OpenGL.
+Remember that first we must always include the glad include, since this includes the OpenGL header files (for example GL/gl.h) that are used by other libraries such as GLFW.
+We should compile and check that it does it successfully, that no error appears, running this code doesn't produce a window or anything.
+In the next lesson, we will create our first window in OpenGL.
+
+
