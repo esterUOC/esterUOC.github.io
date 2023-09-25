@@ -1,4 +1,4 @@
-  ---
+---
 title: "First Shaders"
 permalink: "/Lesson4_OG/"
 layout: page
