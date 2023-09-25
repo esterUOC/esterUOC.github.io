@@ -1,4 +1,4 @@
-  ---
+---
 title: "Vertex Attributes"
 permalink: "/Lesson5_OG/"
 layout: page
