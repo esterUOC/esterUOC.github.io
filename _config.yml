@@ -1,6 +1,6 @@
 title: "Programacio Gràfica - PG"
 author: "Ester Arroyo"
-description: "Universitat Oberta de Catalunya"
+description: "UOC"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -24,10 +24,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
+  - {title: Mail, icon: envelope, url: "mailto:earroyog@uoc.edu"}
+  - {title: Github, icon: github, url: "https://github.com/esterUOC/PG"}
+  
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
