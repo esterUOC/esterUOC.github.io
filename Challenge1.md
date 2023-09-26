@@ -37,7 +37,7 @@ Lesson | Learning outcome | Source file | Related functions
 
 ### Lesson 01: Introduction to raylib and videogames programming
 
-*Lesson code file to review: [01_blocks_game_intro.c](lessons/01_blocks_game_intro.c)*
+*Lesson code file to review: [01_blocks_game_intro.c](Challenge1/lessons/01_blocks_game_intro.c)*
 
 In this first lesson we will introduce raylib library and videogames programming principles. We will setup raylib and take a look to its functionality; we will see how videogame life cycle works and we will implement a basic screens management system for our game.
 
@@ -85,7 +85,7 @@ Recommended [raylib examples](http://www.raylib.com/examples.html) to check:
 
 ### Lesson 02: Draw basic shapes (circle, rectangle)
 
-*Lesson code file to review: [02_blocks_game_drawing.c](lessons/02_blocks_game_drawing.c)*
+*Lesson code file to review: [02_blocks_game_drawing.c](Challenge1/lessons/02_blocks_game_drawing.c)*
 
 To draw basic shapes, raylib provides the following functions:
 ```c
@@ -104,7 +104,7 @@ Recommended [raylib examples](http://www.raylib.com/examples.html) to check:
 
 ### Lesson 03: Inputs management (keyboard, mouse)
 
-*Lesson code file to review: [03_blocks_game_inputs.c](lessons/03_blocks_game_inputs.c)*
+*Lesson code file to review: [03_blocks_game_inputs.c](Challenge1/lessons/03_blocks_game_inputs.c)*
 
 To manage inputs, raylib provides a set of functions to detect keyboard and mouse current state:
 ```c
@@ -129,7 +129,7 @@ Recommended [raylib examples](http://www.raylib.com/examples.html) to check:
 
 ### Lesson 04: Collision detection and resolution
 
-*Lesson code file to review: [04_blocks_game_collisions.c](lessons/04_blocks_game_collisions.c)*
+*Lesson code file to review: [04_blocks_game_collisions.c](Challenge1/lessons/04_blocks_game_collisions.c)*
 
 To check collisions between simple shapes (circle, rectangle), raylib provides the following functions:
 ```c
@@ -141,7 +141,7 @@ Those functions return *true* if the involved rectangles/circles collide, is up 
 
 ### Lesson 05: Textures loading and drawing
 
-*Lesson code file to review: [05_blocks_game_textures.c](lessons/05_blocks_game_textures.c)*
+*Lesson code file to review: [05_blocks_game_textures.c](Challenge1/lessons/05_blocks_game_textures.c)*
 
 Actually texture loading and drawing is a quite complex process: 
 
@@ -168,7 +168,7 @@ Recommended [raylib examples](http://www.raylib.com/examples.html) to check:
 
 ### Lesson 06: Fonts loading and text drawing
 
-*Lesson code file to review: [06_blocks_game_text.c](lessons/06_blocks_game_text.c)*
+*Lesson code file to review: [06_blocks_game_text.c](Challenge1/lessons/06_blocks_game_text.c)*
 
 To draw text, raylib loads a default font on `InitWindow()`, that font is used when drawing text with:
 ```c
@@ -190,7 +190,7 @@ Recommended [raylib examples](http://www.raylib.com/examples.html) to check:
 
 ### Lesson 07: Sounds and music loading and playing
 
-*Lesson code file to review: [07_blocks_game_audio.c](lessons/07_blocks_game_audio.c)*
+*Lesson code file to review: [07_blocks_game_audio.c](Challenge1/lessons/07_blocks_game_audio.c)*
 
 To deal with audio on raylib, first of all, audio device must be initialized. To manage audio device, use the following functions:
 ```c
