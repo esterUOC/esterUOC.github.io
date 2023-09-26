@@ -1,10 +1,10 @@
 ---
-title: "Challenge3"
+title: "Challenge3: OpenGL tutorials - Part 2"
 permalink: "/Challenge3/"
 layout: page
 ---
 
-## OpenGL tutorials - Part 2
+## Challenge3: OpenGL tutorials - Part 2
 - Textures [Lesson 8](Challenge3/Lesson8_OG.md)
 - Set up GLM, matrixs and  vectors [Lesson 9](Challenge3/Lesson9_OG.md)
 - Coordinate Systems [Lesson 10](Challenge3/Lesson10_OG.md)
