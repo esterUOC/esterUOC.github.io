@@ -1,10 +1,10 @@
 ---
-title: "Challenge2"
+title: "Challenge2: OpenGL tutorials"
 permalink: "/Challenge2/"
 layout: page
 ---
 
-## OpenGL tutorials
+## Challenge2: OpenGL tutorials
 - OpenGL Intro [Lesson 0](Challenge2/Lesson0_OG.md)
 - Set up project [Lesson 1](Challenge2/Lesson1_OG.md)
 - First Window [Lesson 2](Challenge2/Lesson2_OG.md)
