@@ -1,8 +1,6 @@
 
 # Challenge 01: Blocks game
 
-*by Ramon Santamaria ([@raysan5](https://twitter.com/raysan5))*
-
 ![blocks game](blocks_game.gif "Blocks Game")
 
 ## Introduction
@@ -27,13 +25,13 @@ This game is developed using [raylib](http://www.raylib.com/), a simple and easy
 
 Lesson | Learning outcome | Source file | Related functions
 :-----:|------------------|:------------|:-----------------:
-[01](#lesson-01-introduction-to-raylib-and-videogames-programming) | raylib functionality, <br>videogame life cycle, <br>basic screens management | [01_blocks_game_intro.c](lessons/01_blocks_game_intro.c) | InitWindow(), CloseWindow(), <br>BeginDrawing(), EndDrawing()
-[02](#lesson-02-draw-basic-shapes-circle-rectangle) | basic shapes drawing | [02_blocks_game_drawing.c](lessons/02_blocks_game_drawing.c) | DrawRectangle(), DrawCircle()
-[03](#lesson-03-inputs-management-keyboard-mouse) | inputs management | [03_blocks_game_inputs.c](lessons/03_blocks_game_inputs.c) | IsKeyPressed(), IsKeyDown(), <br>IsMouseButtonPressed(), <br>IsMouseButtonDown(), <br>GetMouseX(), GetMouseY()
-[04](#lesson-04-collision-detection-and-resolution) | collision detection and resolution | [04_blocks_game_collisions.c](lessons/04_blocks_game_collisions.c) | CheckCollisionCircleRec(), <br>CheckCollisionRecs(), <br>CheckCollisionCircles()
-[05](#lesson-05-textures-loading-and-drawing) | textures loading and drawing | [05_blocks_game_textures.c](lessons/05_blocks_game_textures.c) | LoadTexture(), UnloadTexture(), <br>DrawTexture()
-[06](#lesson-06-fonts-loading-and-text-drawing) | fonts loading and text drawing | [06_blocks_game_text.c](lessons/06_blocks_game_text.c) | LoadFont(), UnloadFont(), <br>DrawText(), DrawTextEx()
-[07](#lesson-07-sounds-and-music-loading-and-playing) | sounds and music loading and playing | [07_blocks_game_audio.c](lessons/07_blocks_game_audio.c) | InitAudioDevice(), CloseAudioDevice(), <br>LoadSound(), UnloadSound(), <br>PlaySound(), LoadMusicStream(), UnloadMusicStream(), <br>PlayMusicStream()
+[01](#lesson-01-introduction-to-raylib-and-videogames-programming) | raylib functionality, <br>videogame life cycle, <br>basic screens management | [01_blocks_game_intro.c](Challenge1/lessons/01_blocks_game_intro.c) | InitWindow(), CloseWindow(), <br>BeginDrawing(), EndDrawing()
+[02](#lesson-02-draw-basic-shapes-circle-rectangle) | basic shapes drawing | [02_blocks_game_drawing.c](Challenge1/lessons/02_blocks_game_drawing.c) | DrawRectangle(), DrawCircle()
+[03](#lesson-03-inputs-management-keyboard-mouse) | inputs management | [03_blocks_game_inputs.c](Challenge1/lessons/03_blocks_game_inputs.c) | IsKeyPressed(), IsKeyDown(), <br>IsMouseButtonPressed(), <br>IsMouseButtonDown(), <br>GetMouseX(), GetMouseY()
+[04](#lesson-04-collision-detection-and-resolution) | collision detection and resolution | [04_blocks_game_collisions.c](Challenge1/lessons/04_blocks_game_collisions.c) | CheckCollisionCircleRec(), <br>CheckCollisionRecs(), <br>CheckCollisionCircles()
+[05](#lesson-05-textures-loading-and-drawing) | textures loading and drawing | [05_blocks_game_textures.c](Challenge1/lessons/05_blocks_game_textures.c) | LoadTexture(), UnloadTexture(), <br>DrawTexture()
+[06](#lesson-06-fonts-loading-and-text-drawing) | fonts loading and text drawing | [06_blocks_game_text.c](Challenge1/lessons/06_blocks_game_text.c) | LoadFont(), UnloadFont(), <br>DrawText(), DrawTextEx()
+[07](#lesson-07-sounds-and-music-loading-and-playing) | sounds and music loading and playing | [07_blocks_game_audio.c](Challenge1/lessons/07_blocks_game_audio.c) | InitAudioDevice(), CloseAudioDevice(), <br>LoadSound(), UnloadSound(), <br>PlaySound(), LoadMusicStream(), UnloadMusicStream(), <br>PlayMusicStream()
 
 **NOTE:** Most of the documentation for the challenge is directly included in the source code files as code comments. Read carefully those comments to understand every task and how implement the proposed solutions.
 
