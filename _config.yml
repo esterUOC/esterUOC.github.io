@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Inici", icon: home}
   - {file: "Challenge0.md", title: "Challenge 0"}
-  - {file: "https://github.com/esterUOC/esterUOC.github.io/blob/master/Challenge1/README.md", title: "Challenge 1"}
+  - {file: "Challenge1.md", title: "Challenge 1"}
   - {file: "Challenge2.md", title: "Challenge 2"}
   - {file: "Challenge3.md", title: "Challenge 3"}
   
