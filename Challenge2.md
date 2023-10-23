@@ -4,6 +4,12 @@ permalink: "/Challenge2/"
 layout: page
 ---
 
+## Introduction
+In this challenge we will implement our first exercices in modern OpenGL. The objective of these lessons is to give the student an easy approach to the graphics programming.
+
+All the examples below are based in the webpage [Learn OpenGL](https://learnopengl.com/), and we highly recommend you to download the Free pdf online book ( you can find it in the same webpage ).
+
+
 ## Challenge2: OpenGL tutorials
 - OpenGL Intro [Lesson 0](Challenge2/Lesson0_OG.md)
 - Set up project [Lesson 1](Challenge2/Lesson1_OG.md)
