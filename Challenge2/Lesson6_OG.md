@@ -1,6 +1,6 @@
 ---
 title: "Element Buffer Objects"
-permalink: "/Lesson5_OG/"
+permalink: "/Lesson6_OG/"
 layout: page
 ---
 
