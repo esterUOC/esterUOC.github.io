@@ -1,4 +1,4 @@
-  ---
+---
 title: "First triangle"
 permalink: "/Lesson3_OG/"
 layout: page
