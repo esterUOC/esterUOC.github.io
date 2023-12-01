@@ -4,6 +4,8 @@ permalink: "/Lesson6_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Hello Triangle](https://learnopengl.com/Getting-started/Hello-Triangle)
+
 In this chapter we will explain the use of the element buffer object (EBO). An EBO is a buffer, which holds the indices that OpenGL uses to decide which vertices to draw.
 
 Let's say for example that we want to draw any mesh (a rock for example) which is made up of thousands of vertices, instead of keeping the list of vertices that form the triangles of the mesh, consequently duplicating many of them and using a lot of space in memory, what we want is to have all the vertices stored in a list and use the indices of these to form the triangles.
