@@ -4,6 +4,8 @@ permalink: "/Lesson7_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Shaders](https://learnopengl.com/Getting-started/Shaders)
+
 Shaders are written in the language very similar to C. GLSL is designed for use with graphics and contains useful functions specifically aimed at manipulating vectors and matrices.
 
 A shader typically has the following structure:
