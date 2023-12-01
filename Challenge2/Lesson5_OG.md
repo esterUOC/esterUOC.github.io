@@ -3,6 +3,9 @@ title: "Vertex Attributes"
 permalink: "/Lesson5_OG/"
 layout: page
 ---
+
+Official Learning Resource: [LearnOpenGL - Hello Triangle](https://learnopengl.com/Getting-started/Hello-Triangle)
+
 OpenGL still does not know how to interpret the vertices stored in memory and how to connect the information of these vertices with the attributes of the vertex shader. In this lesson we will explain step by step how to link attribute vertices.
  
 The vertex shader allows us to specify any input we want in the form of vertex attributes, and while this allows for a lot of flexibility, it means that we have to manually specify what part of our input data goes to which attribute of vertex to vertex shader.
