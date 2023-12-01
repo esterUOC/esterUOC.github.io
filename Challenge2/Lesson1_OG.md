@@ -4,6 +4,8 @@ permalink: "/Lesson1_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Creating a Window](https://learnopengl.com/Getting-started/Creating-a-window)
+
 ## 1. Initialization of the project
 
 In this lesson we will explain step by step how to create our first window using OpenGL.
