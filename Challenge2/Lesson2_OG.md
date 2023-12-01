@@ -3,6 +3,9 @@ title: "Lesson2_OG"
 permalink: "/Lesson2_OG/"
 layout: page
 ---
+
+Official Learning Resource: [LearnOpenGL - Hello Window](https://learnopengl.com/Getting-started/Hello-Window)
+
 ## 2. First window
 
 In this lesson we will explain step by step how to create our first window using OpenGL.
