@@ -4,7 +4,7 @@ permalink: "/Lesson9_OG/"
 layout: page
 ---
 
-Official Learning Resource: [LearnOpenGL - Textures](https://learnopengl.com/Getting-started/Transformations)
+Official Learning Resource: [LearnOpenGL - Transformations](https://learnopengl.com/Getting-started/Transformations)
 
 So far all our objects are static. For morels we will do it by transforming them using (multiple) matrices.
 
