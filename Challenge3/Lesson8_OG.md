@@ -4,6 +4,8 @@ permalink: "/Lesson8_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Textures](https://learnopengl.com/Getting-started/Textures)
+
 In this lesson we will learn to how to use textures. As you know, a texture is a 2D image (1D and 3D textures even exist) that is used to add detail and realism to an object.
 
 In our example we would like map the texture wall.jpeg above the triangle of our application.
