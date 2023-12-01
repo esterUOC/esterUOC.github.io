@@ -4,6 +4,8 @@ permalink: "/Lesson11_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Camera](https://learnopengl.com/Getting-started/Camera)
+
 In this lesson we will learn how to initialize a camera in OpenGL. We'll create a freestyle camera that allows us to freely move around a 3D scene based on keyboard and mouse input.
 
 The goal is to simulate seeing all the vertices of the world from the perspective of a camera in a certain position. To define the camera we need its position in world space, the direction it is facing, a vector pointing to the right, and a vector pointing up from the camera.
