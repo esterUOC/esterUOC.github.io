@@ -4,6 +4,7 @@ permalink: "/Lesson12_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Text Rendering](https://learnopengl.com/In-Practice/Text-Rendering)
 
 In this lesson we will learn how to render text in OpenGL, but we must point out that there is no support for rendering text within OpenGL, then it will be up to us to define a system to represent the text on the screen.
 Some examples of techniques are: drawing letter shapes using GL_LINES, creating 3D meshes of letters or rendering character textures to 2D quads in a 3D environment, there are also those who render characters to quads.
