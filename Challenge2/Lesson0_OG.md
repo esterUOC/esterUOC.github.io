@@ -4,6 +4,8 @@ permalink: "/Lesson0_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL  - Getting started](https://learnopengl.com/Getting-started/OpenGL)
+
 ## What is OpenGL?
 In this new PAC we will leave behind the use of the Raylib framework and start using OpenGL, considered as an API that provides a large number of functions that we can use to manipulate graphics and images.
 
