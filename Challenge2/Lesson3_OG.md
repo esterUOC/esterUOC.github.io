@@ -3,6 +3,9 @@ title: "First triangle"
 permalink: "/Lesson3_OG/"
 layout: page
 ---
+
+Official Learning Resource: [LearnOpenGL - Hello Triangle](https://learnopengl.com/Getting-started/Hello-Triangle)
+
 In this lesson we will explain step by step how to create our first window using OpenGL.
 
 ## 3.1 Graphics pipeline
