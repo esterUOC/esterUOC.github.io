@@ -3,6 +3,9 @@ title: "First Shaders"
 permalink: "/Lesson4_OG/"
 layout: page
 ---
+
+Official Learning Resource: [LearnOpenGL - Shaders](https://learnopengl.com/Getting-started/Shaders)
+
 In this lesson we will explain step by step how to create our first shaders.
 
 Modern OpenGL requires us to at least set up a vertex and fragment shader if we want to do some rendering, so we'll create a new class and create our first shaders. This way we can finally visualize our triangle.
