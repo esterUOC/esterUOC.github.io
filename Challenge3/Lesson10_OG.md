@@ -4,6 +4,8 @@ permalink: "/Lesson10_OG/"
 layout: page
 ---
 
+Official Learning Resource: [LearnOpenGL - Textures](https://learnopengl.com/Getting-started/Coordinate-Systems)
+
 As we discussed in previous lessons, OpenGL expects all vertices, which we want to be visible, to be in normalized device coordinates after each execution of the vertex shader.
 This means that all the x, y and z coordinates of each vertex should be between -1.0 and 1.0; coordinates outside this range will not be visible.
 Normally the coordinates of the 3D meshes of the world, the characters, are usually in non-normalized coordinates (-1.0 and 1.0), and what is usually done is, in the vertex shader we will transform them so that they are within this range.
