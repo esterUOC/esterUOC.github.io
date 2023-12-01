@@ -20,7 +20,7 @@ This new version of OpenGL is more flexible and efficient, but at the same time 
 
 We will learn OpenGL 3.3, although the library is currently already in version 4.8. This is not a problem, since all versions since 3.3 add useful additional features for OpenGL without changing the core mechanics of OpenGL; newer versions just introduce slightly more efficient or more useful ways to accomplish the same tasks.
 
-Links of interest: [OpenGL official page](www.opengl.org)  
+Links of interest: [OpenGL official page](https://www.opengl.org)  
 
 ## State machine
 OpenGL is itself a big state machine: a collection of variables that define how it should work at any given time.
