@@ -3,6 +3,9 @@ title: "GLM, Matrices and Vectors"
 permalink: "/Lesson9_OG/"
 layout: page
 ---
+
+Official Learning Resource: [LearnOpenGL - Textures](https://learnopengl.com/Getting-started/Transformations)
+
 So far all our objects are static. For morels we will do it by transforming them using (multiple) matrices.
 
 Consult topic 8 of the pdf to learn about vectors, matrices and the mathematical operations we can do, as well as the vector product and the dot product.
