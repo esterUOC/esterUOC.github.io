@@ -1,5 +1,5 @@
 ---
-title: "Rendering Text"
+title: "Text Rendering"
 permalink: "/Lesson12_OG/"
 layout: page
 ---
