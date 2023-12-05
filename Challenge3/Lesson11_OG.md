@@ -32,7 +32,8 @@ If we replace the view matrix definition that we have previously with this new d
 ```
 If we compile and run, we can see how the cube is rotating all the time, what is really happening is that we are moving the camera around the cube.
 
+![LearnOpenGL](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/e1a12b03-7f58-4336-809a-50c59f87c812)
 
-## 10.1 Exercise
+## 10.1 Exercise (optional)
 
-Follow the code to make our own camera.
+Follow the code from the official web to make our own camera.
