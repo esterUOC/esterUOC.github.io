@@ -4,11 +4,11 @@ permalink: "/Lesson2/"
 layout: page
 ---
 
-## Creating/Adding files to our project
+## .h and .cpp files
 
-Before learning how to add/delete files from a project, we will explain why when we program in C++ and especially if we do OOO programming, we recommend creating two types of files:
+Before learning how to add/delete files from a project, we will explain why, when we program in C++, and especially if we do OOO programming, we highly recommend creating two types of files:
 	The .h, .hpp or headers or interface files
-	Els .cpp, .cxx, .c o implementation  
+	The .cpp, .cxx, .c o implementation  
 
 For .h or header files, the idea is that the contents of these files contain the declarations of things like C++ types, programmer-declared types, function declarations, as well as structure or class declarations.
 
@@ -18,9 +18,10 @@ In the cpp or implementation files is where we have the definitions or logic of 
 
 Why are we interested in having two files?
 -	By encapsulation, we want to provide a class or structure with its functions, but we don't want the end user to see or have access to the implementation.
--	reuse In this way we can reuse the declaration of a function in different cpp.
+-	reuse: this way we can reuse the declaration of a function in different cpp.
 
 
+## Creating/Adding files to our project
 
 From a new VS project created, we will add a new file (.cpp), to carry out this action we will have to:
 
