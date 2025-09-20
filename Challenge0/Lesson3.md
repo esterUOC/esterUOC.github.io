@@ -3,6 +3,9 @@ title: "Lesson3"
 permalink: "/Lesson3/"
 layout: page
 ---
+
+## Visual Studio set up
+
 To modify the VisualStudio compilation rules we will have to select a project from our solution and click with the right button.
 
  ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/36c0cb9b-7e21-4ad8-b44e-74b5390796d9)
@@ -26,7 +29,7 @@ The Configuration part contains a list with the existing configuration types by 
  ![4](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/be82b3b9-3030-4d44-8d74-edd5280e357a)
 
 
-For the platform we default to these options: remember x86 is the same as Win32.
+For the platform we have as default these options: remember x86 is the same as Win32.
 
  ![5](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/7fb745b2-e4b9-4b42-85e9-48deeb4ee524)
 
