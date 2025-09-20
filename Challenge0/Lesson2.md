@@ -23,12 +23,15 @@ Why are we interested in having two files?
 
 ## Creating/Adding files to our project
 
-From a new VS project created, we will add a new file (.cpp), to carry out this action we will have to:
+From a new VS project created, we will create a new file (.h or .cpp), to carry out this action we will have to:
 
-To create a new file in our solution or project, right-click on the "Solution Explorer" window, click Add -> New Item...
+To create a new file of type (.h or .cpp) in our solution or project, right-click on the "Solution Explorer" window, click Add -> New Item...
 
 ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/bf779913-6e0d-4fb4-90e5-00aac87187f9)
 
 A new window will open where we can choose the type of file we want to add, as well as its name and where we want to save it, this last point is very important, since by default it will be saved at the root of where find the solution
 
 ![2](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/4ecf8920-6959-43d3-80a4-ded69f5788e6)
+
+For an already existing file of type (.h or .cpp), right-click on the "Solution Explorer" window, click Add -> Exisiting Item...
+
