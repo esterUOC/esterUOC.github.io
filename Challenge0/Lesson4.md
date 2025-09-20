@@ -21,24 +21,28 @@ Imagine we have a little code in the project:
  ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/01cc3597-1e88-4a08-8efa-dd193265b4e0)
 
 
-(If you want a much more extensive explanation of the phases involved in the process of compiling a C++ file can be found here: [link](https://en.cppreference.com/w/cpp/language/translation_phases#Phase_4)
+(If you want a much more extensive explanation of the phases involved in the process of compiling a C++ file can be found here: [translation phases](https://en.cppreference.com/w/cpp/language/translation_phases#Phase_4)
 )
+
 We don't need to go through all of the stages a compilation has, but the most significant ones are:
 
--	A very important phase that the compilation process goes through is that of preprocessing,
+1.	A very important phase that the compilation process goes through is the preprocessing,
 
 One of the first things a compiler does when it needs to compile a file is to preprocess all the preprocessor statements that exist in that file. In addition, any line thatstart for a hash (#),and a preprocessor statement. Some examples can be:
+
 	#include
+ 
 	#define
+ 
 	#pragma
+ 
 
 
-For more information on preprocessor declaration types go here: [link](https://en.cppreference.com/w/cpp/preprocessor)
-
+For more information on preprocessor declaration types go here:  [preprocessor](https://en.cppreference.com/w/cpp/preprocessor)
 
 In our example we find #include,what is a preprocessor statement, here the compiler will look for this file (the iostream file) and add/copy all its contents to this file.
 
--	Then, once all the preprocessor statements have been evaluated, the compiler will convert all the C++ code in the file or files into machine code.
+2.	Then, once all the preprocessor statements have been evaluated, the compiler will convert all the C++ code in the file or files into machine code.
 
 Use:
 Returning to our code, we see that we find the main, which in C++ is called the entry point, every program in C++ must have an entry point where our program begins to execute, once the program begins execution at the entry point, the following lines will be executed in order, unless there is acommand of change of execution order
@@ -62,19 +66,20 @@ Returning to the compilation phase, it is important to mention that only the cpp
 
 So in this way we will have many cpp files compiled individually, generating each of them an .obj file. Once the compiler has created all these .obj files from all the cpp files in our solution, we need to combine them all to create a single binary file (.exe), this will be the function of the Linker.
 
-The linker basically takes all these .obj files, and matches them in such a way that we get a single file.
+3.	The linker basically takes all these .obj files, and matches them in such a way that we get a single file.
 
-In VisualStudio we can configure the Linker in the "Linker" tab. Highlight:
+In VisualStudio we can configure the Linker in the "Linker" tab:
+
 -	In the "General" section: we can define external directories to access static or dynamic libraries, in case our solution needs them.
 
  ![5](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/b0923688-2018-4c07-815d-9b05493b4f38)
 
 
-## COMPILE
+## Compiling example
 
 Now that we understand the phases of building our project, let's see how we can build in VS.
 
-1.	To compile a single cpp file we can do thisclicking ctrl+F7, or from the VS toolbar, this option is not found by default, to add it we will have to:
+1.	To compile a single cpp file we can do this clicking ctrl+F7, or from the VS toolbar, this option is not found by default, to add it we will have to:
 
 		i. By clicking the right mouse button on the toolbar, we add the "Build" section
  
@@ -100,7 +105,7 @@ Select the “Build” section and scroll down to select the compile button
 ![10](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/b554727b-ccff-4fd3-be18-7b4b2d2be6ab)
 
 
-## DEBUG
+## Debugging example
 It is important that you distinguish between a compilation error and a linking error, because their resolution is different.
 
 Compilation errors are basically due to an error in the syntax of the code (missing a semicolon, undeclared variable, etc...)
@@ -122,12 +127,12 @@ Linking errors appear like this:
  ![13](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/4a1bbbe9-8ce9-4f1c-971f-11c38f4d5390)
 
 
-I to the finestra d'output:
+Also appear in the output window:
 
  ![14](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/ffe85b2b-313e-4279-a978-aa310bcdbe45)
 
 
-Mostly Linking errors occur because a cpp file cannot find the definition of a function.
+Remember that most of the Linking errors occur because a cpp file cannot find the definition of a function.
 
 
 
