@@ -35,20 +35,27 @@ We will select the option "Community 2022" which is free for everyone.
 Clicking this button will download an executable: the VisualStudioSetup.exe, this executable will
 install the VisualStudioInstaller or VSI.
 
-Once we have the VSI running, in the "Available" tab we will see that we have the optionto
-install el VS Community 2022. Clickinstall and we will wait for a while, it usually takes its time…
+Once we have the VSI running, in the "Available" tab we will see that we have the option to
+install the VS Community 2022. Click install and we will wait for a while, it usually takes its time…
+
 Next we will have to configure which components we want to install, for us we will only need to
 click on the options of:
-- Desktop developent with C++
-- (opcional) .Net desktop development i Universal Windows Platform development
+
+- Desktop developent with C++.
+- (optional) .Net desktop development and Universal Windows Platform development.
 
 ![3](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/3b2aa184-a9f8-47e4-ab1c-9875a8d71e55)
 
-Once VS is installed we can launch the application, we recommend you register using your
+Once Visual Studio is installed we can launch the application, we recommend you to register yourself by using a
 Microsoft username and password.
-From now on we will be able to configure some things in the application.
-1. Dark mode: if we want the "dark mode" instead of the one used by default, we will go to
+
+From now on, we will be able to configure some things in the application. 
+
+For example to enable the Dark mode: if we want the "dark mode" instead of the one used by default, we will go to
 Tools->Options, in the "General" tab, choose the Dark mode.
+
+## Create an empty project
+
 To create a new solution go to File->New Project, here we will select C++ in the "Languages"
 tab, and from here we can select "Empty project".
 
