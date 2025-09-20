@@ -3,6 +3,9 @@ title: "Lesson2"
 permalink: "/Lesson2/"
 layout: page
 ---
+
+## Creating/Adding files to our project
+
 Before learning how to add/delete files from a project, we will explain why when we program in C++ and especially if we do OOO programming, we recommend creating two types of files:
 	The .h, .hpp or headers or interface files
 	Els .cpp, .cxx, .c o implementation  
