@@ -23,15 +23,18 @@ more features in one place.”
 
 We will go to the [link](https://visualstudio.microsoft.com/downloads/), and follow the next instructions:
 
-![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/f35d1044-1089-41ef-ae4a-99195b430be1)
+When the Download web page of the VisualStudio has download:
 
-We will selectthe option "Community 2022" which is free for everyone.
+<img width="1000" height="550" alt="image" src="https://github.com/user-attachments/assets/0b41905c-33a5-4648-b3a8-0f7450dc977c" />
 
-![2](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/c169bbf9-15a7-4920-9c8c-38945c2a0906)
+We will select the option "Community 2022" which is free for everyone.
 
+
+<img width="340" height="278" alt="image" src="https://github.com/user-attachments/assets/89f8b4b4-7239-4710-8f05-fae40b053e29" />
 
 Clicking this button will download an executable: the VisualStudioSetup.exe, this executable will
 install the VisualStudioInstaller or VSI.
+
 Once we have the VSI running, in the "Available" tab we will see that we have the optionto
 install el VS Community 2022. Clickinstall and we will wait for a while, it usually takes its time…
 Next we will have to configure which components we want to install, for us we will only need to
