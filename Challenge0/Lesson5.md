@@ -7,7 +7,7 @@ layout: page
 
 In this document we learn how to add breakpoints, which will help us interrupt the execution of our program and check the values of the variables at that moment.
 
-A breakpoint is a point in our program where the debugger will pause execution in the line where we have placed this breakpoint, and this allows us to see the state of our program, or in other words, see which values, in memory, contain the variables and structures of our program.
+A breakpoint is a point in our program where the debugger will pause the execution in the line where we have placed this breakpoint, and this allows us to see the state of our program, or in other words, see which values, in memory, contain the variables and structures of our program.
 
 As we will see in the next examples, knowing the state of the memory is incredibly useful for diagnosing the problem in our code, since we can check at any time what the values of the variables are and diagnose whether this value is the correct one or not.
 
@@ -32,11 +32,16 @@ At the top of the menu we will find tools that will make it easier for us to han
 
  
 
--	The continue button will allow us to continue the execution as if nothing had happened.
--	Button "Step into" or F11, "Step Over" or F9 and "Step Out" or Shift+F11, these 3 buttons will allow us to control the execution step by step.
-i) "Step into" will allow us to "enter" the function where the execution is at that moment, in our case it will be the Log function.
-ii) "Step over" will allow us to pass over or pass the debug point to the next line of code, in our case std::cin...
-iii) "Step out" will allow us to exit the execution of the function where the debug point is located, and go to the line of code that called this function, in our case, it is main.
+-	The continue button will allow us to continue the execution as if nothing had happened. or F5
+-	Button "Step into" or F11, "Step Over" or F9 and "Step Out" or Shift+F11, these 3 buttons will allow us to control the execution step by step:
+
+
+"Step into" or F11 will allow us to "enter" the function where the execution is at that moment, in our case it will be the Log function.
+ 
+"Step over" will allow us to pass over or pass the debug point to the next line of code, in our case std::cin...
+
+"Step out" or Shift+F11, will allow us to exit the execution of the function where the debug point is located, and go to the line of code that called this function, in our case, it is main.
+ 
 
 When we're debugging we can hover over the variables and examine their contents, for example:
 
@@ -50,11 +55,9 @@ We also have three windows that will help us investigate the value of the memory
 
 
 -	Watch window: this window allows us to monitor the variables that we consider. In the example we are interested in knowing the value of time_span at any time, to achieve this we just have to write the name of the variable in the "Name" column.
--	 
+  
 
-
-
-Visualization of the memory status
+## Visualization of the memory status
 
 In VS we have a window, very similar to the ones explained above, which allows us to see the state of all the memory. To open this window we will have to go to Debug->Windows->Memory (Important: This option only appears when we are running our code)
 
