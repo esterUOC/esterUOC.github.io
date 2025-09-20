@@ -23,7 +23,7 @@ Imagine we have a little code in the project:
 
 (If you want a much more extensive explanation of the phases involved in the process of compiling a C++ file can be found here: [link](https://en.cppreference.com/w/cpp/language/translation_phases#Phase_4)
 )
-We don't need to go through all of them, but the most significant ones:
+We don't need to go through all of the stages a compilation has, but the most significant ones are:
 
 -	A very important phase that the compilation process goes through is that of preprocessing,
 
@@ -38,7 +38,7 @@ For more information on preprocessor declaration types go here: [link](https://e
 
 In our example we find #include,what is a preprocessor statement, here the compiler will look for this file (the iostream file) and add/copy all its contents to this file.
 
-Then, once all the preprocessor statements have been evaluated, the compiler will convert all the C++ code in the file or files into machine code.
+-	Then, once all the preprocessor statements have been evaluated, the compiler will convert all the C++ code in the file or files into machine code.
 
 Use:
 Returning to our code, we see that we find the main, which in C++ is called the entry point, every program in C++ must have an entry point where our program begins to execute, once the program begins execution at the entry point, the following lines will be executed in order, unless there is acommand of change of execution order
