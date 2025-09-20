@@ -12,7 +12,7 @@ operating systems in the video game industry, ifuse Mac or Linux link the follow
 - [Link a Linux](https://www.youtube.com/watch?v=LKLuvoY6U0I&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=4)
   
 It is true that we could use any text editor to write our code in C++, and once written, pass it
-through a compiler to generate an executable binary, whichthey can execute finally But our
+through a compiler to generate an executable binary, which they can execute finally. But our
 choice for the IDE (integrated development environment) Visual Studio 2022 is because this
 software brings together a group of tools that will help us write and debug our code.
 As its official page says: “In addition to code editing, the Visual Studio IDE brings together
@@ -21,7 +21,7 @@ more features in one place.”
 
 ## Download and installation of the VS 2022
 
-We will go to the [link](page:https://visualstudio.microsoft.com/es/vs/), and click the download button
+We will go to the [link](https://visualstudio.microsoft.com/downloads/), and follow the next instructions:
 
 ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/f35d1044-1089-41ef-ae4a-99195b430be1)
 
