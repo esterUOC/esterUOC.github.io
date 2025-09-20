@@ -3,23 +3,26 @@ title: "Lesson4"
 permalink: "/Lesson4/"
 layout: page
 ---
-Before we start explaining how to debug, we will first explain and justify how the pipeline works for:
+
+## Compiling/Building Pipeline
+
+Before we start explaining how to debug, we will first explaining and justify how the pipeline works for:
 
 1. Create one or several files in C++
 2. Compile them
-3. And finally run a binary file.
+3. And finally run the resulting compilated binary file.
 
-The basic workflow of writing a simple program begins by creating and writing text files with C++ syntax, these files will be passed through a compiler, which will compile them, and if this compilation is correct, it will create a binary file.
+The basic workflow of writing a simple program begins by creating and writing text files with C++ syntax, these files will be passed through a compiler, which will compile them, and if the compilation is correct, it will create a binary file.
 
-In this example we want as a result a binary file (exe), but keep in mind that it can be either a static library (.lib) or a dynamic library (.dll).
+In this example we want as a result a binary file (exe), but keep in mind that we also can have as a resulting file a static library (.lib) or a dynamic library (.dll).
 
 Imagine we have a little code in the project:
 
  ![1](https://github.com/esterUOC/esterUOC.github.io/assets/128288660/01cc3597-1e88-4a08-8efa-dd193265b4e0)
 
 
-A much more extensive explanation of the phases involved in the process of compiling a C++ file can be found here:[link](https://en.cppreference.com/w/cpp/language/translation_phases#Phase_4)
-
+(If you want a much more extensive explanation of the phases involved in the process of compiling a C++ file can be found here: [link](https://en.cppreference.com/w/cpp/language/translation_phases#Phase_4)
+)
 We don't need to go through all of them, but the most significant ones:
 
 -	A very important phase that the compilation process goes through is that of preprocessing,
