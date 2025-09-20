@@ -63,11 +63,12 @@ tab, and from here we can select "Empty project".
 
 You can save the new project wherever you want, I recommend creating a specific folder for
 each project.
-It is recommended not to name thesolutions nor to projects that contain spaces. As you have
-seen, VS contains solutions and projects, we can say that a solution is like a group of projects
+It is recommended not to name the solutions or the projects with names that contain spaces. 
+
+As you have seen, VS contains solutions and projects, we can say that a solution is like a group of projects
 related to each other, where the solution is like a workbench where all the projects are
 concentrated.
-And every project isessentially a set of files which we can compile and create an executable, a
+And every project is essentially a set of files which we can compile and create an executable, a
 static or dynamic library etc etc
 We recommend the Visual Assist plugin, it is paid but highly recommended.
 
