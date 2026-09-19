@@ -3,7 +3,7 @@ title: "Lesson1"
 permalink: "/Lesson1/"
 layout: page
 ---
-Our primary tool for writing programs in C++ will be the use of the Visual Studio 2022 software.
+Our primary tool for writing programs in C++ will be the use of the Visual Studio 2026 software.
 This tutorial covers the Windows operating system, as it is one of the most widely used
 operating systems in the video game industry, ifuse Mac or Linux link the following videos:
 
@@ -13,13 +13,13 @@ operating systems in the video game industry, ifuse Mac or Linux link the follow
   
 It is true that we could use any text editor to write our code in C++, and once written, pass it
 through a compiler to generate an executable binary, which they can execute finally. But our
-choice for the IDE (integrated development environment) Visual Studio 2022 is because this
+choice for the IDE (integrated development environment) Visual Studio 2026 is because this
 software brings together a group of tools that will help us write and debug our code.
 As its official page says: “In addition to code editing, the Visual Studio IDE brings together
 graphic designers, compilers, code completion tools, source code control, extensions and many
 more features in one place.”
 
-## Download and installation of the VS 2022
+## Download and installation of the VS 2026
 
 We will go to the [link](https://visualstudio.microsoft.com/downloads/), and follow the next instructions:
 
@@ -27,7 +27,7 @@ When the Download web page of the VisualStudio has download:
 
 <img width="1000" height="550" alt="image" src="https://github.com/user-attachments/assets/0b41905c-33a5-4648-b3a8-0f7450dc977c" />
 
-We will select the option "Community 2022" which is free for everyone.
+We will select the option "Community 2026" which is free for everyone.
 
 
 <img width="340" height="278" alt="image" src="https://github.com/user-attachments/assets/89f8b4b4-7239-4710-8f05-fae40b053e29" />
@@ -36,7 +36,7 @@ Clicking this button will download an executable: the VisualStudioSetup.exe, thi
 install the VisualStudioInstaller or VSI.
 
 Once we have the VSI running, in the "Available" tab we will see that we have the option to
-install the VS Community 2022. Click install and we will wait for a while, it usually takes its time…
+install the VS Community 2026. Click install and we will wait for a while, it usually takes its time…
 
 Next we will have to configure which components we want to install, for us we will only need to
 click on the options of:
