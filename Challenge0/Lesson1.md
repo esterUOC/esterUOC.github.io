@@ -5,11 +5,11 @@ layout: page
 ---
 Our primary tool for writing programs in C++ will be the use of the Visual Studio 2026 software.
 This tutorial covers the Windows operating system, as it is one of the most widely used
-operating systems in the video game industry, ifuse Mac or Linux link the following videos:
+operating systems in the video game industry, if you use Mac or Linux link the following videos:
 
 
-- [Link a Mac](https://www.youtube.com/watch?v=1E_kBSka_ec&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=3)
-- [Link a Linux](https://www.youtube.com/watch?v=LKLuvoY6U0I&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=4)
+- [C++ in a Mac](https://www.youtube.com/watch?v=1E_kBSka_ec&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=3)
+- [C++ in a Linux](https://www.youtube.com/watch?v=LKLuvoY6U0I&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=4)
   
 It is true that we could use any text editor to write our code in C++, and once written, pass it
 through a compiler to generate an executable binary, which they can execute finally. But our
@@ -25,18 +25,17 @@ We will go to the [link](https://visualstudio.microsoft.com/downloads/), and fol
 
 When the Download web page of the VisualStudio has download:
 
-<img width="1000" height="550" alt="image" src="https://github.com/user-attachments/assets/0b41905c-33a5-4648-b3a8-0f7450dc977c" />
+<img width="1670" height="857" alt="image" src="https://github.com/user-attachments/assets/948aebf7-6c77-4e35-b60b-09dc89df2585" />
 
 We will select the option "Community 2026" which is free for everyone.
 
-
-<img width="340" height="278" alt="image" src="https://github.com/user-attachments/assets/89f8b4b4-7239-4710-8f05-fae40b053e29" />
-
-Clicking this button will download an executable: the VisualStudioSetup.exe, this executable will
+Clicking the button "Free Download" will trigger the download of the: VisualStudioSetup.exe, this executable will
 install the VisualStudioInstaller or VSI.
 
 Once we have the VSI running, in the "Available" tab we will see that we have the option to
 install the VS Community 2026. Click install and we will wait for a while, it usually takes its time…
+
+<img width="1243" height="499" alt="image" src="https://github.com/user-attachments/assets/05a95d06-7a26-4240-bf62-f5000342e9fe" />
 
 Next we will have to configure which components we want to install, for us we will only need to
 click on the options of:
