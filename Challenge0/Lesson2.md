@@ -6,7 +6,7 @@ layout: page
 
 ## .h and .cpp files
 
-Before learning how to add/delete files from a project, we will explain why, when we program in C++, and especially if we do OOO programming, we highly recommend creating two types of files:
+Before learning how to add/delete files from a project, we will explain why, when we program in C++, and especially if we do Object Oriented Programming (OOP) programming, we highly recommend creating two types of files:
 	The .h, .hpp or headers or interface files
 	The .cpp, .cxx, .c o implementation  
 
